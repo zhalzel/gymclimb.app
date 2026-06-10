@@ -82,24 +82,47 @@
       </div>
     </section>
 
-    <section class="section split">
+    <section class="section flow-section" aria-labelledby="flow-heading">
       <div class="section-heading">
-        <h2>Three views, no clutter.</h2>
-        <p>Use the iPhone app for fuller sessions or the Apple Watch app when you want a fast step-by-step logging flow between attempts.</p>
+        <h2 id="flow-heading">A session should feel easy to remember.</h2>
+        <p>The app is built around the rhythm of the gym: attempt, log, rest, repeat. Each entry should take seconds and still tell the story of the session later.</p>
       </div>
-      <div class="screenshot-row">
-        <figure class="shot-card">
-          <img src="assets/screenshot-log-climb.png" alt="Log Climb screenshot." width="1179" height="2556">
-          <figcaption>Log climb</figcaption>
-        </figure>
-        <figure class="shot-card">
-          <img src="assets/screenshot-session.png" alt="Today's Session screenshot." width="1179" height="2556">
-          <figcaption>Today's session</figcaption>
-        </figure>
-        <figure class="shot-card">
-          <img src="assets/screenshot-history.png" alt="History screenshot." width="1179" height="2556">
-          <figcaption>History by day</figcaption>
-        </figure>
+      <div class="flow-panel" aria-label="Example Gym Climb session flow">
+        <div class="flow-card">
+          <span class="flow-kicker">Start</span>
+          <h3>Pick the climb</h3>
+          <p>Top rope, lead, auto belay, or boulder. Grade and route color stay one tap away.</p>
+          <div class="route-palette" aria-hidden="true">
+            <span class="route-dot red"></span>
+            <span class="route-dot orange"></span>
+            <span class="route-dot yellow"></span>
+            <span class="route-dot green"></span>
+            <span class="route-dot blue"></span>
+          </div>
+        </div>
+        <div class="flow-card featured">
+          <span class="flow-kicker">Between attempts</span>
+          <h3>Log without lingering</h3>
+          <p>Result, effort, and notes fit into a fast flow so your phone never becomes the workout.</p>
+          <div class="effort-meter" aria-hidden="true">
+            <span style="--height: 18%"></span>
+            <span style="--height: 28%"></span>
+            <span style="--height: 42%"></span>
+            <span style="--height: 55%"></span>
+            <span style="--height: 68%"></span>
+            <span style="--height: 82%"></span>
+          </div>
+        </div>
+        <div class="flow-card">
+          <span class="flow-kicker">Afterward</span>
+          <h3>See the pattern</h3>
+          <p>Today stays scannable, and older sessions stay grouped by day for a quick look back.</p>
+          <div class="session-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </section>
 
