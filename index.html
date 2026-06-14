@@ -18,9 +18,26 @@
   <meta name="twitter:title" content="Gym Climb">
   <meta name="twitter:description" content="Indoor climbing, logged fast from iPhone and Apple Watch.">
   <meta name="twitter:image" content="https://gymclimb.app/assets/og-image.png">
+  <meta name="apple-itunes-app" content="app-id=6503015593">
   <link rel="icon" href="assets/app-icon-liquid-glass.png">
   <link rel="apple-touch-icon" href="assets/app-icon-liquid-glass.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Gym Climb",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS, watchOS",
+    "description": "A calm iPhone and Apple Watch logbook for indoor climbing sessions. Log attempts, effort, grades, route colors, and results in seconds.",
+    "url": "https://gymclimb.app/",
+    "downloadUrl": "https://apps.apple.com/app/gym-climb/id6503015593",
+    "image": "https://gymclimb.app/assets/og-image.png",
+    "author": { "@type": "Person", "name": "Zachary Halzel" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -44,7 +61,16 @@
         <h1>Gym Climb</h1>
         <p class="hero-copy">A calm iPhone and Apple Watch logbook for the moments between attempts. Tap in the climb, note the effort, and get back on the wall.</p>
         <div class="actions">
-          <span class="status-pill">Launching soon on the App Store</span>
+          <!-- APP STORE LINK: live listing for Gym Climb (app-id 6503015593). -->
+          <a class="appstore-badge" href="https://apps.apple.com/app/gym-climb/id6503015593" aria-label="Download Gym Climb on the App Store">
+            <svg class="appstore-badge-logo" viewBox="0 0 384 512" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+            </svg>
+            <span class="appstore-badge-text">
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
           <a class="button secondary" href="support/">Support</a>
         </div>
         <ul class="availability" aria-label="App highlights">
@@ -55,13 +81,13 @@
       </div>
       <figure class="screenshot-stack" aria-label="Gym Climb app screenshots">
         <div class="screenshot secondary">
-          <img src="assets/screenshot-session.png" alt="Gym Climb Today's Session screen with recent climbs and effort bars." width="1179" height="2556">
+          <img src="assets/screenshot-progress.png" alt="Gym Climb Progress screen with weekly stats, an activity heatmap, and a climbs-per-week volume chart." width="1320" height="2868">
         </div>
         <div class="screenshot primary">
-          <img src="assets/screenshot-log-climb.png" alt="Gym Climb Log Climb screen with style, grade, color, effort, and result controls." width="1179" height="2556">
+          <img src="assets/screenshot-climb.png" alt="Gym Climb logging screen showing the current session's climbs above style, grade, color, and effort controls." width="1320" height="2868">
         </div>
         <div class="screenshot tertiary">
-          <img src="assets/screenshot-history.png" alt="Gym Climb History screen with climbs grouped by day." width="1179" height="2556">
+          <img src="assets/screenshot-history.png" alt="Gym Climb History screen with climbs grouped by day." width="1320" height="2868">
         </div>
       </figure>
     </section>

@@ -1,0 +1,24 @@
+{
+  "name": "Gym Climb",
+  "short_name": "Gym Climb",
+  "description": "A calm iPhone and Apple Watch logbook for indoor climbing sessions.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "theme_color": "#07111f",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/assets/app-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/app-icon-liquid-glass.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
