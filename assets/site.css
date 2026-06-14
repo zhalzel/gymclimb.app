@@ -226,6 +226,10 @@ h1 {
 }
 
 .dot.private {
+  background: #30b0c7;
+}
+
+.dot.free {
   background: var(--green);
 }
 
@@ -267,7 +271,7 @@ h1 {
   right: 9%;
   top: 26px;
   z-index: 3;
-  width: min(50%, 282px);
+  width: min(54%, 300px);
 }
 
 .screenshot.secondary {
@@ -323,12 +327,20 @@ h2 {
   box-shadow: 0 18px 44px rgba(35, 67, 102, 0.045);
 }
 
-.feature-mark {
-  margin-bottom: 28px;
+.feature-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  background: rgba(10, 132, 255, 0.1);
   color: var(--primary-dark);
-  font-size: 0.82rem;
-  font-weight: 820;
-  letter-spacing: 0.08em;
+}
+
+.feature-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
 .feature h3 {
@@ -510,11 +522,24 @@ h2 {
   color: var(--muted);
 }
 
+.footer-tagline {
+  margin: 8px 0 0;
+  max-width: 420px;
+  color: var(--muted);
+}
+
 .footer nav {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  margin-top: 10px;
+  margin-top: 14px;
+}
+
+.footer-legal {
+  margin: 16px 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+  opacity: 0.8;
 }
 
 .content {
@@ -866,9 +891,14 @@ a:focus-visible,
   }
 
   .feature {
-    border-color: rgba(255, 255, 255, 0.08);
-    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.3);
+  }
+
+  .feature-icon {
+    background: rgba(74, 163, 255, 0.16);
+    color: #82bdff;
   }
 
   .flow-card {
