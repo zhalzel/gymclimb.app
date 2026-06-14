@@ -233,61 +233,35 @@ h1 {
   background: var(--green);
 }
 
-.screenshot-stack {
-  position: relative;
-  width: 100%;
-  min-height: 640px;
+.hero-shots {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
   margin: 0;
 }
 
-.screenshot-stack::before {
-  content: "";
-  position: absolute;
-  inset: 58px 8px 76px;
-  border: 1px solid rgba(10, 132, 255, 0.08);
-  border-radius: 46px;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(244, 249, 255, 0.56)),
-    radial-gradient(circle at 70% 22%, rgba(10, 132, 255, 0.12), transparent 18rem);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 30px 80px rgba(35, 67, 102, 0.12);
-}
-
-.screenshot {
-  position: absolute;
+.hero-shot {
+  flex: 1 1 0;
+  max-width: 196px;
   overflow: hidden;
   border: 1px solid rgba(17, 17, 17, 0.07);
-  border-radius: 34px;
+  border-radius: 28px;
   background: #ffffff;
-  box-shadow: 0 30px 74px rgba(17, 17, 17, 0.14);
+  box-shadow: 0 22px 54px rgba(35, 67, 102, 0.16);
 }
 
-.screenshot img {
+.hero-shot img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.screenshot.primary {
-  right: 9%;
-  top: 26px;
-  z-index: 3;
-  width: min(54%, 300px);
-}
-
-.screenshot.secondary {
-  left: 4%;
-  top: 132px;
+/* deliberate, gentle lift on the center phone — intentional, not overlapping */
+.hero-shot:nth-child(2) {
+  transform: translateY(-22px) scale(1.05);
   z-index: 2;
-  width: min(40%, 222px);
-  opacity: 0.9;
-}
-
-.screenshot.tertiary {
-  right: 2%;
-  bottom: 18px;
-  z-index: 1;
-  width: min(38%, 212px);
-  opacity: 0.82;
+  box-shadow: 0 30px 70px rgba(35, 67, 102, 0.22);
 }
 
 .section {
@@ -628,9 +602,8 @@ h2 {
     padding-top: 56px;
   }
 
-  .screenshot-stack {
-    min-height: 560px;
-    max-width: 600px;
+  .hero-shots {
+    max-width: 560px;
     margin: 0 auto;
   }
 
@@ -682,30 +655,16 @@ h2 {
     margin-top: 30px;
   }
 
-  .screenshot-stack {
-    min-height: 500px;
+  .hero-shots {
+    gap: 10px;
   }
 
-  .screenshot-stack::before {
-    inset: 42px 0 54px;
-    border-radius: 34px;
+  .hero-shot {
+    max-width: none;
   }
 
-  .screenshot.primary {
-    right: 2%;
-    top: 34px;
-    width: 58%;
-  }
-
-  .screenshot.secondary {
-    left: 0;
-    top: 116px;
-    width: 46%;
-  }
-
-  .screenshot.tertiary {
-    right: 7%;
-    width: 42%;
+  .hero-shot:nth-child(2) {
+    transform: translateY(-14px) scale(1.04);
   }
 
   .flow-section {
@@ -876,18 +835,10 @@ a:focus-visible,
     background: rgba(255, 255, 255, 0.04);
   }
 
-  .screenshot-stack::before {
-    border-color: rgba(74, 163, 255, 0.14);
-    background:
-      linear-gradient(145deg, rgba(30, 41, 58, 0.7), rgba(16, 24, 38, 0.5)),
-      radial-gradient(circle at 70% 22%, rgba(10, 132, 255, 0.18), transparent 18rem);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 30px 80px rgba(0, 0, 0, 0.5);
-  }
-
-  .screenshot {
+  .hero-shot {
     border-color: rgba(255, 255, 255, 0.08);
     background: #11151c;
-    box-shadow: 0 30px 74px rgba(0, 0, 0, 0.55);
+    box-shadow: 0 22px 54px rgba(0, 0, 0, 0.5);
   }
 
   .feature {
