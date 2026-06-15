@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gym Climb | The simplest way to track your climbing</title>
   <meta name="description" content="The simplest, most delightful way to track your climbing. Open it, log a climb in seconds, and enjoy looking back — on iPhone and Apple Watch.">
-  <meta name="theme-color" content="#07111f">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0e13" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://gymclimb.app/">
   <meta property="og:title" content="Gym Climb">
   <meta property="og:description" content="The simplest, most delightful way to track your climbing.">
   <meta property="og:url" content="https://gymclimb.app/">
-  <meta property="og:image" content="https://gymclimb.app/assets/og-image.png">
+  <meta property="og:image" content="https://gymclimb.app/assets/og-image.png?v=2">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Gym Climb">
   <meta name="twitter:description" content="The simplest, most delightful way to track your climbing.">
-  <meta name="twitter:image" content="https://gymclimb.app/assets/og-image.png">
+  <meta name="twitter:image" content="https://gymclimb.app/assets/og-image.png?v=2">
   <meta name="apple-itunes-app" content="app-id=6503015593">
-  <link rel="icon" href="assets/app-icon-liquid-glass.png">
-  <link rel="apple-touch-icon" href="assets/app-icon-liquid-glass.png">
+  <link rel="icon" href="assets/icon-96.png">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/site.css?v=4">
+  <link rel="stylesheet" href="assets/site.css?v=5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,7 +44,7 @@
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="./">
-        <img src="assets/app-icon-liquid-glass.png" alt="" width="38" height="38">
+        <img src="assets/icon-96.png" alt="" width="38" height="38">
         <span>Gym Climb</span>
       </a>
       <div class="nav-links">
@@ -59,7 +60,7 @@
       <div>
         <p class="eyebrow">Gym Climb</p>
         <h1>The simplest climbing tracker.</h1>
-        <p class="hero-copy">The most delightful way to track your climbing. Open it, log a climb in seconds, and actually enjoy looking back.</p>
+        <p class="hero-copy">Log every climb in seconds — grade, color, effort, send or attempt. Then watch your personal bests, streaks, and weekly volume stack up. On iPhone and Apple Watch.</p>
         <div class="actions">
           <!-- APP STORE LINK: live listing for Gym Climb (app-id 6503015593). -->
           <a class="appstore-badge" href="https://apps.apple.com/app/gym-climb/id6503015593" aria-label="Download Gym Climb on the App Store">
@@ -82,13 +83,25 @@
       </div>
       <figure class="hero-shots" aria-label="Gym Climb app screenshots">
         <div class="hero-shot">
-          <img src="assets/screenshot-climb.png" alt="Gym Climb logging screen showing the current session's climbs above style, grade, color, and effort controls." width="1320" height="2868">
+          <picture>
+            <source srcset="assets/screenshot-climb.avif" type="image/avif">
+            <source srcset="assets/screenshot-climb.webp" type="image/webp">
+            <img src="assets/screenshot-climb.png" alt="Gym Climb logging screen showing the current session's climbs above style, grade, color, and effort controls." width="840" height="1825" decoding="async">
+          </picture>
         </div>
         <div class="hero-shot">
-          <img src="assets/screenshot-progress.png" alt="Gym Climb Progress screen with weekly stats, an activity heatmap, and a climbs-per-week volume chart." width="1320" height="2868">
+          <picture>
+            <source srcset="assets/screenshot-progress.avif" type="image/avif">
+            <source srcset="assets/screenshot-progress.webp" type="image/webp">
+            <img src="assets/screenshot-progress.png" alt="Gym Climb Progress screen with weekly stats, an activity heatmap, and a climbs-per-week volume chart." width="840" height="1825" fetchpriority="high" decoding="async">
+          </picture>
         </div>
         <div class="hero-shot">
-          <img src="assets/screenshot-history.png" alt="Gym Climb History screen with climbs grouped by day." width="1320" height="2868">
+          <picture>
+            <source srcset="assets/screenshot-history.avif" type="image/avif">
+            <source srcset="assets/screenshot-history.webp" type="image/webp">
+            <img src="assets/screenshot-history.png" alt="Gym Climb History screen with climbs grouped by day." width="840" height="1825" decoding="async">
+          </picture>
         </div>
       </figure>
     </section>
@@ -96,18 +109,18 @@
     <section class="section" id="features">
       <div class="section-heading">
         <h2>Climbing tracking that gets out of your way.</h2>
-        <p>No setup. No clutter. Just the simplest way to remember your climbs.</p>
+        <p>No setup, no clutter — just fast logging and a clear picture of your climbing.</p>
       </div>
       <div class="feature-grid">
         <article class="feature">
           <div class="feature-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
           <h3>Log in seconds</h3>
-          <p>A climb takes a second to record. Nothing to set up, nothing in your way.</p>
+          <p>Tap grade, route color, and effort — send or attempt. Bouldering or ropes, V-scale or 5.x.</p>
         </article>
         <article class="feature">
-          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.7 6.3L20 10l-6.3 1.7L12 18l-1.7-6.3L4 10l6.3-1.7L12 2z"/></svg></div>
-          <h3>A joy to use</h3>
-          <p>Fast, clean, and quietly beautiful — a tracker you'll actually want to open.</p>
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="12" width="4" height="8" rx="1"/><rect x="10" y="7" width="4" height="13" rx="1"/><rect x="17" y="3" width="4" height="17" rx="1"/></svg></div>
+          <h3>See yourself improve</h3>
+          <p>Personal bests, an activity heatmap, and weekly volume — your progress, at a glance.</p>
         </article>
         <article class="feature">
           <div class="feature-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="4" width="10" height="16" rx="2"/><rect x="15" y="8" width="6" height="8" rx="2"/></svg></div>
@@ -119,7 +132,7 @@
 
     <section class="section flow-section" aria-labelledby="flow-heading">
       <div class="section-heading">
-        <h2 id="flow-heading">A session, in three taps.</h2>
+        <h2 id="flow-heading">A session, in three steps.</h2>
         <p>Open it, log your climb, get back on the wall. That's the whole thing — start to look-back.</p>
       </div>
       <div class="flow-panel" aria-label="Example Gym Climb session flow">
