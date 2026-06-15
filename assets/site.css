@@ -1,7 +1,7 @@
 :root {
   color-scheme: light;
   --ink: #111111;
-  --muted: #6f7681;
+  --muted: #586069;
   --soft: #f2f6fb;
   --line: #e4e9f0;
   --primary: #0a84ff;
@@ -513,7 +513,6 @@ h2 {
   margin: 16px 0 0;
   font-size: 0.86rem;
   color: var(--muted);
-  opacity: 0.8;
 }
 
 .content {
@@ -655,16 +654,23 @@ h2 {
     margin-top: 30px;
   }
 
+  /* One legible phone on narrow screens. Feature the clean Progress shot (2nd);
+     the logging hero (1st) is reserved for desktop until its dead-band is closed. */
   .hero-shots {
-    gap: 10px;
+    gap: 0;
   }
 
   .hero-shot {
-    max-width: none;
+    max-width: 280px;
+  }
+
+  .hero-shot:nth-child(1),
+  .hero-shot:nth-child(3) {
+    display: none;
   }
 
   .hero-shot:nth-child(2) {
-    transform: translateY(-14px) scale(1.04);
+    transform: none;
   }
 
   .flow-section {
