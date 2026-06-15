@@ -251,6 +251,10 @@ h1 {
   box-shadow: 0 22px 54px rgba(35, 67, 102, 0.16);
 }
 
+.hero-shot picture {
+  display: block;
+}
+
 .hero-shot img {
   display: block;
   width: 100%;
