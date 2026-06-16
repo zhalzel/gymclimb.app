@@ -23,7 +23,7 @@
   <link rel="icon" href="assets/icon-96.png">
   <link rel="apple-touch-icon" href="assets/icon-180.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/site.css?v=5">
+  <link rel="stylesheet" href="assets/site.css?v=6">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -72,7 +72,7 @@
               <strong>App Store</strong>
             </span>
           </a>
-          <a class="button secondary" href="#features">See how it works</a>
+          <a class="button secondary" href="#walkthrough">See it in action</a>
         </div>
         <ul class="availability" aria-label="App highlights">
           <li><span class="dot free"></span>Free</li>
@@ -130,46 +130,50 @@
       </div>
     </section>
 
-    <section class="section flow-section" aria-labelledby="flow-heading">
+    <section class="section showcase" id="walkthrough" aria-labelledby="walkthrough-heading">
       <div class="section-heading">
-        <h2 id="flow-heading">A session, in three steps.</h2>
-        <p>Open it, log your climb, get back on the wall. That's the whole thing — start to look-back.</p>
+        <h2 id="walkthrough-heading">See it in action</h2>
       </div>
-      <div class="flow-panel" aria-label="Example Gym Climb session flow">
-        <div class="flow-card">
-          <span class="flow-kicker">Tap</span>
-          <h3>Log it</h3>
-          <p>Pick your climb and you're done. Grade and color are right there.</p>
-          <div class="route-palette" aria-hidden="true">
-            <span class="route-dot red"></span>
-            <span class="route-dot orange"></span>
-            <span class="route-dot yellow"></span>
-            <span class="route-dot green"></span>
-            <span class="route-dot blue"></span>
-          </div>
+
+      <div class="showcase-row">
+        <div class="showcase-shot">
+          <picture>
+            <source srcset="assets/screenshot-climb.avif" type="image/avif">
+            <source srcset="assets/screenshot-climb.webp" type="image/webp">
+            <img src="assets/screenshot-climb.png" alt="Gym Climb logging screen showing the current session's climbs above style, grade, color, and effort controls." width="840" height="1825" loading="lazy" decoding="async">
+          </picture>
         </div>
-        <div class="flow-card featured">
-          <span class="flow-kicker">In seconds</span>
-          <h3>Back to climbing</h3>
-          <p>A couple of taps and your phone is away again. It never becomes the workout.</p>
-          <div class="effort-meter" aria-hidden="true">
-            <span style="--height: 18%"></span>
-            <span style="--height: 28%"></span>
-            <span style="--height: 42%"></span>
-            <span style="--height: 55%"></span>
-            <span style="--height: 68%"></span>
-            <span style="--height: 82%"></span>
-          </div>
+        <div class="showcase-text">
+          <h3>Log a climb</h3>
+          <p>Tap the grade, route color, and effort — send or attempt. That's the whole log. Bouldering or ropes, V-scale or 5.x.</p>
         </div>
-        <div class="flow-card">
-          <span class="flow-kicker">Later</span>
-          <h3>Love the look back</h3>
-          <p>See today at a glance, and past sessions whenever you want them.</p>
-          <div class="session-lines" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+      </div>
+
+      <div class="showcase-row reverse">
+        <div class="showcase-shot">
+          <picture>
+            <source srcset="assets/screenshot-history.avif" type="image/avif">
+            <source srcset="assets/screenshot-history.webp" type="image/webp">
+            <img src="assets/screenshot-history.png" alt="Gym Climb History screen with climbs grouped by day." width="840" height="1825" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="showcase-text">
+          <h3>Look back at every session</h3>
+          <p>Your climbs, grouped by day. Scroll back through everything you've done.</p>
+        </div>
+      </div>
+
+      <div class="showcase-row">
+        <div class="showcase-shot">
+          <picture>
+            <source srcset="assets/screenshot-progress.avif" type="image/avif">
+            <source srcset="assets/screenshot-progress.webp" type="image/webp">
+            <img src="assets/screenshot-progress.png" alt="Gym Climb Progress screen with weekly stats, an activity heatmap, and a climbs-per-week volume chart." width="840" height="1825" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="showcase-text">
+          <h3>Track your progress</h3>
+          <p>Personal bests, an activity heatmap, and weekly volume — sends versus attempts.</p>
         </div>
       </div>
     </section>
