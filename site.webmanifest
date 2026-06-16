@@ -1,7 +1,7 @@
 {
   "name": "Gym Climb",
   "short_name": "Gym Climb",
-  "description": "A calm iPhone and Apple Watch logbook for your climbing sessions.",
+  "description": "A simple iPhone and Apple Watch logbook for your climbs.",
   "start_url": "/",
   "scope": "/",
   "display": "browser",
